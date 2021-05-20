@@ -1,0 +1,174 @@
+2021-05-19 13:12:29,535 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:35 - no applicable action for [springProfile], current ElementPath  is [[configuration][springProfile]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:91 - no applicable action for [include], current ElementPath  is [[configuration][springProfile][include]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@11:75 - no applicable action for [appender], current ElementPath  is [[configuration][springProfile][appender]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@12:19 - no applicable action for [file], current ElementPath  is [[configuration][springProfile][appender][file]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@15:87 - no applicable action for [rollingPolicy], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@16:34 - no applicable action for [fileNamePattern], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][fileNamePattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@19:30 - no applicable action for [maxFileSize], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxFileSize]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@22:31 - no applicable action for [totalSizeCap], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][totalSizeCap]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@24:29 - no applicable action for [maxHistory], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxHistory]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@27:22 - no applicable action for [encoder], current ElementPath  is [[configuration][springProfile][appender][encoder]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@28:26 - no applicable action for [pattern], current ElementPath  is [[configuration][springProfile][appender][encoder][pattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@32:28 - no applicable action for [root], current ElementPath  is [[configuration][springProfile][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@34:47 - no applicable action for [appender-ref], current ElementPath  is [[configuration][springProfile][root][appender-ref]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@39:32 - no applicable action for [springProfile], current ElementPath  is [[configuration][springProfile]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@42:75 - no applicable action for [appender], current ElementPath  is [[configuration][springProfile][appender]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@43:19 - no applicable action for [file], current ElementPath  is [[configuration][springProfile][appender][file]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@46:87 - no applicable action for [rollingPolicy], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@47:34 - no applicable action for [fileNamePattern], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][fileNamePattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@50:30 - no applicable action for [maxFileSize], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxFileSize]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@53:31 - no applicable action for [totalSizeCap], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][totalSizeCap]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@55:29 - no applicable action for [maxHistory], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxHistory]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@58:22 - no applicable action for [encoder], current ElementPath  is [[configuration][springProfile][appender][encoder]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@59:26 - no applicable action for [pattern], current ElementPath  is [[configuration][springProfile][appender][encoder][pattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@63:58 - no applicable action for [logger], current ElementPath  is [[configuration][springProfile][logger]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@64:46 - no applicable action for [logger], current ElementPath  is [[configuration][springProfile][logger]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@65:29 - no applicable action for [root], current ElementPath  is [[configuration][springProfile][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@66:47 - no applicable action for [appender-ref], current ElementPath  is [[configuration][springProfile][root][appender-ref]]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:327)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:281)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:239)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:375)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.cg.ofr.OnlineFlatRentalApplication.main(OnlineFlatRentalApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:35 - no applicable action for [springProfile], current ElementPath  is [[configuration][springProfile]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:91 - no applicable action for [include], current ElementPath  is [[configuration][springProfile][include]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@11:75 - no applicable action for [appender], current ElementPath  is [[configuration][springProfile][appender]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@12:19 - no applicable action for [file], current ElementPath  is [[configuration][springProfile][appender][file]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@15:87 - no applicable action for [rollingPolicy], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@16:34 - no applicable action for [fileNamePattern], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][fileNamePattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@19:30 - no applicable action for [maxFileSize], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxFileSize]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@22:31 - no applicable action for [totalSizeCap], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][totalSizeCap]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@24:29 - no applicable action for [maxHistory], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxHistory]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@27:22 - no applicable action for [encoder], current ElementPath  is [[configuration][springProfile][appender][encoder]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@28:26 - no applicable action for [pattern], current ElementPath  is [[configuration][springProfile][appender][encoder][pattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@32:28 - no applicable action for [root], current ElementPath  is [[configuration][springProfile][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@34:47 - no applicable action for [appender-ref], current ElementPath  is [[configuration][springProfile][root][appender-ref]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@39:32 - no applicable action for [springProfile], current ElementPath  is [[configuration][springProfile]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@42:75 - no applicable action for [appender], current ElementPath  is [[configuration][springProfile][appender]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@43:19 - no applicable action for [file], current ElementPath  is [[configuration][springProfile][appender][file]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@46:87 - no applicable action for [rollingPolicy], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@47:34 - no applicable action for [fileNamePattern], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][fileNamePattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@50:30 - no applicable action for [maxFileSize], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxFileSize]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@53:31 - no applicable action for [totalSizeCap], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][totalSizeCap]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@55:29 - no applicable action for [maxHistory], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxHistory]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@58:22 - no applicable action for [encoder], current ElementPath  is [[configuration][springProfile][appender][encoder]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@59:26 - no applicable action for [pattern], current ElementPath  is [[configuration][springProfile][appender][encoder][pattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@63:58 - no applicable action for [logger], current ElementPath  is [[configuration][springProfile][logger]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@64:46 - no applicable action for [logger], current ElementPath  is [[configuration][springProfile][logger]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@65:29 - no applicable action for [root], current ElementPath  is [[configuration][springProfile][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@66:47 - no applicable action for [appender-ref], current ElementPath  is [[configuration][springProfile][root][appender-ref]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:312)
+	... 23 common frames omitted
+2021-05-19 13:14:05,858 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:35 - no applicable action for [springProfile], current ElementPath  is [[configuration][springProfile]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:91 - no applicable action for [include], current ElementPath  is [[configuration][springProfile][include]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@11:75 - no applicable action for [appender], current ElementPath  is [[configuration][springProfile][appender]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@12:19 - no applicable action for [file], current ElementPath  is [[configuration][springProfile][appender][file]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@15:87 - no applicable action for [rollingPolicy], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@16:34 - no applicable action for [fileNamePattern], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][fileNamePattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@19:30 - no applicable action for [maxFileSize], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxFileSize]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@22:31 - no applicable action for [totalSizeCap], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][totalSizeCap]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@24:29 - no applicable action for [maxHistory], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxHistory]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@27:22 - no applicable action for [encoder], current ElementPath  is [[configuration][springProfile][appender][encoder]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@28:26 - no applicable action for [pattern], current ElementPath  is [[configuration][springProfile][appender][encoder][pattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@32:28 - no applicable action for [root], current ElementPath  is [[configuration][springProfile][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@34:47 - no applicable action for [appender-ref], current ElementPath  is [[configuration][springProfile][root][appender-ref]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@39:32 - no applicable action for [springProfile], current ElementPath  is [[configuration][springProfile]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@42:75 - no applicable action for [appender], current ElementPath  is [[configuration][springProfile][appender]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@43:19 - no applicable action for [file], current ElementPath  is [[configuration][springProfile][appender][file]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@46:87 - no applicable action for [rollingPolicy], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@47:34 - no applicable action for [fileNamePattern], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][fileNamePattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@50:30 - no applicable action for [maxFileSize], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxFileSize]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@53:31 - no applicable action for [totalSizeCap], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][totalSizeCap]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@55:29 - no applicable action for [maxHistory], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxHistory]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@58:22 - no applicable action for [encoder], current ElementPath  is [[configuration][springProfile][appender][encoder]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@59:26 - no applicable action for [pattern], current ElementPath  is [[configuration][springProfile][appender][encoder][pattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@63:58 - no applicable action for [logger], current ElementPath  is [[configuration][springProfile][logger]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@64:46 - no applicable action for [logger], current ElementPath  is [[configuration][springProfile][logger]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@65:29 - no applicable action for [root], current ElementPath  is [[configuration][springProfile][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@66:47 - no applicable action for [appender-ref], current ElementPath  is [[configuration][springProfile][root][appender-ref]]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:327)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:281)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:239)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:375)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.cg.ofr.OnlineFlatRentalApplication.main(OnlineFlatRentalApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@6:35 - no applicable action for [springProfile], current ElementPath  is [[configuration][springProfile]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@8:91 - no applicable action for [include], current ElementPath  is [[configuration][springProfile][include]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@11:75 - no applicable action for [appender], current ElementPath  is [[configuration][springProfile][appender]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@12:19 - no applicable action for [file], current ElementPath  is [[configuration][springProfile][appender][file]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@15:87 - no applicable action for [rollingPolicy], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@16:34 - no applicable action for [fileNamePattern], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][fileNamePattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@19:30 - no applicable action for [maxFileSize], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxFileSize]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@22:31 - no applicable action for [totalSizeCap], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][totalSizeCap]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@24:29 - no applicable action for [maxHistory], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxHistory]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@27:22 - no applicable action for [encoder], current ElementPath  is [[configuration][springProfile][appender][encoder]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@28:26 - no applicable action for [pattern], current ElementPath  is [[configuration][springProfile][appender][encoder][pattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@32:28 - no applicable action for [root], current ElementPath  is [[configuration][springProfile][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@34:47 - no applicable action for [appender-ref], current ElementPath  is [[configuration][springProfile][root][appender-ref]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@39:32 - no applicable action for [springProfile], current ElementPath  is [[configuration][springProfile]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@42:75 - no applicable action for [appender], current ElementPath  is [[configuration][springProfile][appender]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@43:19 - no applicable action for [file], current ElementPath  is [[configuration][springProfile][appender][file]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@46:87 - no applicable action for [rollingPolicy], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@47:34 - no applicable action for [fileNamePattern], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][fileNamePattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@50:30 - no applicable action for [maxFileSize], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxFileSize]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@53:31 - no applicable action for [totalSizeCap], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][totalSizeCap]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@55:29 - no applicable action for [maxHistory], current ElementPath  is [[configuration][springProfile][appender][rollingPolicy][maxHistory]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@58:22 - no applicable action for [encoder], current ElementPath  is [[configuration][springProfile][appender][encoder]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@59:26 - no applicable action for [pattern], current ElementPath  is [[configuration][springProfile][appender][encoder][pattern]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@63:58 - no applicable action for [logger], current ElementPath  is [[configuration][springProfile][logger]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@64:46 - no applicable action for [logger], current ElementPath  is [[configuration][springProfile][logger]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@65:29 - no applicable action for [root], current ElementPath  is [[configuration][springProfile][root]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@66:47 - no applicable action for [appender-ref], current ElementPath  is [[configuration][springProfile][root][appender-ref]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:312)
+	... 23 common frames omitted
