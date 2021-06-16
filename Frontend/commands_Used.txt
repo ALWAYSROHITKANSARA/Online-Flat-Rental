@@ -1,0 +1,6 @@
+for bootstrap
+
+>npm install bootstrap --save
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
